@@ -71,7 +71,7 @@ jobs:
       # =====================================================
       - name: Upload Allure Report
         if: always()  # Run even if tests failed
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           # Name of the artifact (visible in GitHub UI)
           name: allure-report
@@ -85,7 +85,7 @@ jobs:
       # =====================================================
       - name: Upload Playwright Report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: playwright-report
           path: playwright-report/
@@ -96,7 +96,7 @@ jobs:
       # =====================================================
       - name: Upload Allure Results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: allure-results
           path: allure-results/
