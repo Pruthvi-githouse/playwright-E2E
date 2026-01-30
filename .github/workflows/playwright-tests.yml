@@ -103,7 +103,29 @@ jobs:
           retention-days: 7
 
       # =====================================================
-      # STEP 10: Print test summary
+      # STEP 10: Install nodemailer for email notifications
+      # =====================================================
+      - name: Install nodemailer
+        if: always()
+        run: npm install nodemailer
+
+      # =====================================================
+      # STEP 11: Send email notification with test results
+      # =====================================================
+      - name: Send Test Report Email
+        if: always()
+        run: node scripts/sendTestReport.js
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+        continue-on-error: true  # Don't fail pipeline if email fails
+
+      # =====================================================
+      # STEP 12: Print test summary
       # =====================================================
       - name: Test Summary
         if: always()
@@ -115,6 +137,10 @@ jobs:
           echo "   • Allure Report (main dashboard)"
           echo "   • Playwright Report (HTML report)"
           echo "   • Allure Results (raw data)"
+          echo ""
+          echo "📧 Email Notification:"
+          echo "   • Test results sent to configured email"
+          echo "   • Check GitHub Secrets for status"
           echo ""
           echo "📥 Download Artifacts:"
           echo "   1. Go to Actions tab"
