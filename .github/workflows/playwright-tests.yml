@@ -1,0 +1,124 @@
+name: Playwright Tests with Allure Report
+
+# Trigger this workflow when code is pushed to the main branch
+on:
+  push:
+    branches: [main]
+
+jobs:
+  # Define the test job that runs on GitHub's Ubuntu runner
+  test:
+    runs-on: ubuntu-latest
+    
+    # Set strategy for test execution
+    strategy:
+      # Continue running other jobs even if one fails
+      fail-fast: false
+      matrix:
+        # Can be extended for parallel execution across multiple Node versions
+        node-version: [18.x]
+
+    steps:
+      # =====================================================
+      # STEP 1: Checkout the code from the repository
+      # =====================================================
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch full history for better reporting
+
+      # =====================================================
+      # STEP 2: Setup Node.js environment
+      # =====================================================
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'  # Cache npm dependencies for faster builds
+
+      # =====================================================
+      # STEP 3: Install project dependencies
+      # =====================================================
+      - name: Install dependencies
+        run: npm ci  # Using ci instead of install for CI/CD (more reliable)
+
+      # =====================================================
+      # STEP 4: Install Playwright browsers
+      # =====================================================
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      # =====================================================
+      # STEP 5: Run Playwright tests in headless mode
+      # =====================================================
+      - name: Run Playwright tests
+        run: npm test
+        # Tests will generate results in allure-results/ folder
+        # Continue even if tests fail so we can generate reports
+        continue-on-error: true
+
+      # =====================================================
+      # STEP 6: Generate Allure report from test results
+      # =====================================================
+      - name: Generate Allure Report
+        if: always()  # Run even if tests failed
+        run: |
+          npm install -g allure-commandline
+          allure generate allure-results --clean -o allure-report
+
+      # =====================================================
+      # STEP 7: Upload Allure report as artifact
+      # =====================================================
+      - name: Upload Allure Report
+        if: always()  # Run even if tests failed
+        uses: actions/upload-artifact@v3
+        with:
+          # Name of the artifact (visible in GitHub UI)
+          name: allure-report
+          # Path to the generated Allure report
+          path: allure-report/
+          # Keep artifact for 30 days
+          retention-days: 30
+
+      # =====================================================
+      # STEP 8: Upload test results for debugging
+      # =====================================================
+      - name: Upload Playwright Report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
+
+      # =====================================================
+      # STEP 9: Upload Allure results (raw data)
+      # =====================================================
+      - name: Upload Allure Results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: allure-results
+          path: allure-results/
+          retention-days: 7
+
+      # =====================================================
+      # STEP 10: Print test summary
+      # =====================================================
+      - name: Test Summary
+        if: always()
+        run: |
+          echo "======================================"
+          echo "✅ CI/CD Pipeline Completed"
+          echo "======================================"
+          echo "📊 Artifacts Generated:"
+          echo "   • Allure Report (main dashboard)"
+          echo "   • Playwright Report (HTML report)"
+          echo "   • Allure Results (raw data)"
+          echo ""
+          echo "📥 Download Artifacts:"
+          echo "   1. Go to Actions tab"
+          echo "   2. Click on the latest workflow run"
+          echo "   3. Scroll down to 'Artifacts' section"
+          echo "   4. Download 'allure-report' (Recommended)"
+          echo "======================================"

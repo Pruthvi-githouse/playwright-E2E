@@ -1,0 +1,47 @@
+✓ Found transaction page at: https://uat-agent.ebixcard.com/createTransaction
+
+Inputs found:
+[
+  {
+    "type": "password",
+    "id": "",
+    "name": "password",
+    "placeholder": "Enter Old Password"
+  },
+  {
+    "type": "password",
+    "id": "",
+    "name": "newPassword",
+    "placeholder": "Enter New Password"
+  },
+  {
+    "type": "password",
+    "id": "",
+    "name": "confirmNewPassword",
+    "placeholder": "Reenter New Password"
+  }
+]
+
+Selects found:
+[]
+
+Sections/Headings found:
+[
+  {
+    "tag": "H2",
+    "text": "Set up new password!",
+    "class": "text-2xl font-bold mb-2"
+  }
+]
+
+Buttons found:
+[
+  {
+    "text": "Set Password",
+    "type": "submit"
+  },
+  {
+    "text": "Do it Later",
+    "type": "button"
+  }
+]

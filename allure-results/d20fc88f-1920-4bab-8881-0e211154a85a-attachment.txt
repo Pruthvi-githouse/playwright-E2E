@@ -1,0 +1,44 @@
+Logging in...
+
+====== FORM ELEMENT INSPECTION ======
+
+Total input fields found: 32
+Text inputs: 15
+Labels found: 32
+
+All visible input IDs:
+  [0] id="null" name="orderType" placeholder="null"
+  [1] id="null" name="transactionType" placeholder="null"
+  [2] id="null" name="travelType" placeholder="null"
+  [3] id="null" name="documentType" placeholder="null"
+  [4] id="null" name="cardType" placeholder="null"
+  [5] id="_r_6_" name="cardPackId" placeholder="null"
+  [6] id="_r_7_" name="cardNumber" placeholder="null"
+  [7] id="_r_8_" name="null" placeholder="null"
+  [8] id="null" name="travelCountry" placeholder="null"
+  [9] id="_r_c_" name="fullName" placeholder="null"
+  [10] id="_r_d_" name="panNumber" placeholder="null"
+  [11] id="_r_e_" name="null" placeholder="null"
+  [12] id="_r_h_" name="passportNumber" placeholder="null"
+  [13] id="_r_i_" name="null" placeholder="null"
+  [14] id="_r_l_" name="null" placeholder="null"
+  [15] id="null" name="nationality" placeholder="null"
+  [16] id="_r_p_" name="emailId" placeholder="null"
+  [17] id="_r_q_" name="mobile" placeholder="null"
+  [18] id="null" name="gender" placeholder="null"
+  [19] id="null" name="maritalStatus" placeholder="null"
+
+====== TRYING ALTERNATIVE SELECTORS ======
+Card Number label visible: false
+Full Name label visible: false
+Email label visible: false
+
+Page contains "Card Number": true
+Page contains "Full Name": true
+Page contains "Email": true
+
+📸 Screenshot saved: diagnostic-screenshot.png
+
+Page HTML length: 114644
+Page uses MuiTextField: true
+Page uses MuiInputBase: true

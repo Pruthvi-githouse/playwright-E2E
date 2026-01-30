@@ -1,0 +1,385 @@
+
+Inputs found:
+[
+  {
+    "type": "text",
+    "id": "",
+    "name": "orderType",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "",
+    "name": "transactionType",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "",
+    "name": "travelType",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "",
+    "name": "documentType",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "",
+    "name": "cardType",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_6_",
+    "name": "cardPackId",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_7_",
+    "name": "cardNumber",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_8_",
+    "name": "",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "",
+    "name": "travelCountry",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_c_",
+    "name": "fullName",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_d_",
+    "name": "panNumber",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_e_",
+    "name": "",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_h_",
+    "name": "passportNumber",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_i_",
+    "name": "",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_l_",
+    "name": "",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "",
+    "name": "nationality",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_p_",
+    "name": "emailId",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_q_",
+    "name": "mobile",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "",
+    "name": "gender",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "",
+    "name": "maritalStatus",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_t_",
+    "name": "motherMaidenName",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "",
+    "name": "customerType",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_v_",
+    "name": "addressLine1",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_10_",
+    "name": "addressLine2",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_11_",
+    "name": "country",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "",
+    "name": "state",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_13_",
+    "name": "city",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_14_",
+    "name": "pincode",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_15_",
+    "name": "bank",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_16_",
+    "name": "utrNumber",
+    "placeholder": ""
+  },
+  {
+    "type": "text",
+    "id": "_r_17_",
+    "name": "",
+    "placeholder": ""
+  },
+  {
+    "type": "number",
+    "id": "_r_1a_",
+    "name": "inrAmount",
+    "placeholder": ""
+  }
+]
+
+Selects found:
+[]
+
+Sections/Headings found:
+[
+  {
+    "tag": "H2",
+    "text": "Live Currency Rates",
+    "class": "font-semibold"
+  },
+  {
+    "tag": "DIV",
+    "text": "Booking Details Please fill in all required fields marked with an asterisk*Order Type *​Order TypeTr",
+    "class": "formCard flex flex-col gap-5 bg-white p-5 rounded-md mt-0 !pt-0"
+  },
+  {
+    "tag": "DIV",
+    "text": "DD/MM/YYYY",
+    "class": "MuiPickersSectionList-root MuiPickersInputBase-sectionsContainer css-161q5nr"
+  },
+  {
+    "tag": "SPAN",
+    "text": "DD/",
+    "class": "MuiPickersSectionList-section css-7p02jm"
+  },
+  {
+    "tag": "SPAN",
+    "text": "",
+    "class": "MuiPickersInputBase-sectionBefore css-1wrzzxc"
+  },
+  {
+    "tag": "SPAN",
+    "text": "DD",
+    "class": "MuiPickersSectionList-sectionContent MuiPickersInputBase-sectionContent css-1ry0dx6"
+  },
+  {
+    "tag": "SPAN",
+    "text": "/",
+    "class": "MuiPickersInputBase-sectionAfter css-1wrzzxc"
+  },
+  {
+    "tag": "SPAN",
+    "text": "MM/",
+    "class": "MuiPickersSectionList-section css-7p02jm"
+  },
+  {
+    "tag": "SPAN",
+    "text": "",
+    "class": "MuiPickersInputBase-sectionBefore css-1wrzzxc"
+  },
+  {
+    "tag": "SPAN",
+    "text": "MM",
+    "class": "MuiPickersSectionList-sectionContent MuiPickersInputBase-sectionContent css-1ry0dx6"
+  },
+  {
+    "tag": "SPAN",
+    "text": "/",
+    "class": "MuiPickersInputBase-sectionAfter css-1wrzzxc"
+  },
+  {
+    "tag": "SPAN",
+    "text": "YYYY",
+    "class": "MuiPickersSectionList-section css-7p02jm"
+  },
+  {
+    "tag": "SPAN",
+    "text": "",
+    "class": "MuiPickersInputBase-sectionBefore css-1wrzzxc"
+  },
+  {
+    "tag": "SPAN",
+    "text": "YYYY",
+    "class": "MuiPickersSectionList-sectionContent MuiPickersInputBase-sectionContent css-1ry0dx6"
+  },
+  {
+    "tag": "SPAN",
+    "text": "",
+    "class": "MuiPickersInputBase-sectionAfter css-1wrzzxc"
+  },
+  {
+    "tag": "DIV",
+    "text": "DD/MM/YYYY",
+    "class": "MuiPickersSectionList-root MuiPickersInputBase-sectionsContainer css-161q5nr"
+  },
+  {
+    "tag": "SPAN",
+    "text": "DD/",
+    "class": "MuiPickersSectionList-section css-7p02jm"
+  },
+  {
+    "tag": "SPAN",
+    "text": "",
+    "class": "MuiPickersInputBase-sectionBefore css-1wrzzxc"
+  },
+  {
+    "tag": "SPAN",
+    "text": "DD",
+    "class": "MuiPickersSectionList-sectionContent MuiPickersInputBase-sectionContent css-1ry0dx6"
+  },
+  {
+    "tag": "SPAN",
+    "text": "/",
+    "class": "MuiPickersInputBase-sectionAfter css-1wrzzxc"
+  },
+  {
+    "tag": "SPAN",
+    "text": "MM/",
+    "class": "MuiPickersSectionList-section css-7p02jm"
+  },
+  {
+    "tag": "SPAN",
+    "text": "",
+    "class": "MuiPickersInputBase-sectionBefore css-1wrzzxc"
+  },
+  {
+    "tag": "SPAN",
+    "text": "MM",
+    "class": "MuiPickersSectionList-sectionContent MuiPickersInputBase-sectionContent css-1ry0dx6"
+  },
+  {
+    "tag": "SPAN",
+    "text": "/",
+    "class": "MuiPickersInputBase-sectionAfter css-1wrzzxc"
+  },
+  {
+    "tag": "SPAN",
+    "text": "YYYY",
+    "class": "MuiPickersSectionList-section css-7p02jm"
+  },
+  {
+    "tag": "SPAN",
+    "text": "",
+    "class": "MuiPickersInputBase-sectionBefore css-1wrzzxc"
+  },
+  {
+    "tag": "SPAN",
+    "text": "YYYY",
+    "class": "MuiPickersSectionList-sectionContent MuiPickersInputBase-sectionContent css-1ry0dx6"
+  },
+  {
+    "tag": "SPAN",
+    "text": "",
+    "class": "MuiPickersInputBase-sectionAfter css-1wrzzxc"
+  },
+  {
+    "tag": "DIV",
+    "text": "DD/MM/YYYY",
+    "class": "MuiPickersSectionList-root MuiPickersInputBase-sectionsContainer css-161q5nr"
+  },
+  {
+    "tag": "SPAN",
+    "text": "DD/",
+    "class": "MuiPickersSectionList-section css-7p02jm"
+  }
+]
+
+Buttons found:
+[
+  {
+    "text": "Logout",
+    "type": "submit"
+  },
+  {
+    "text": "",
+    "type": "button"
+  },
+  {
+    "text": "",
+    "type": "button"
+  },
+  {
+    "text": "",
+    "type": "button"
+  },
+  {
+    "text": "",
+    "type": "button"
+  },
+  {
+    "text": "",
+    "type": "button"
+  },
+  {
+    "text": "Create Transaction",
+    "type": "submit"
+  }
+]
