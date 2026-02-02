@@ -23,6 +23,11 @@ const GITHUB_SERVER_URL = process.env.GITHUB_SERVER_URL || 'https://github.com';
 const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY || '';
 const GITHUB_RUN_ID = process.env.GITHUB_RUN_ID || '';
 
+// Construct Allure Dashboard URL for GitHub Pages
+const ALLURE_DASHBOARD_URL = GITHUB_REPOSITORY 
+  ? `https://${GITHUB_REPOSITORY.split('/')[0]}.github.io/${GITHUB_REPOSITORY.split('/')[1]}/`
+  : '';
+
 // Validate required env vars
 if (!GMAIL_USER || !GMAIL_PASSWORD || (!RECIPIENT_EMAIL && !STAKEHOLDER_EMAIL)) {
   console.error('❌ Missing required environment variables:');
@@ -31,6 +36,15 @@ if (!GMAIL_USER || !GMAIL_PASSWORD || (!RECIPIENT_EMAIL && !STAKEHOLDER_EMAIL)) 
   console.error('   - RECIPIENT_EMAIL or STAKEHOLDER_EMAIL (at least one required)');
   process.exit(1);
 }
+
+// Log configuration for debugging
+console.log('📧 Email Configuration:');
+console.log(`   Repository: ${GITHUB_REPOSITORY}`);
+console.log(`   Run ID: ${GITHUB_RUN_ID}`);
+console.log(`   Primary Recipient: ${RECIPIENT_EMAIL || 'Not set'}`);
+console.log(`   Stakeholder: ${STAKEHOLDER_EMAIL || 'Not set'}`);
+console.log(`   Allure Dashboard URL: ${ALLURE_DASHBOARD_URL || 'Will be constructed from GitHub Pages'}`);
+console.log('');
 
 /**
  * Parse test results from allure-results JSON files
@@ -292,11 +306,18 @@ function createEmailBody(results) {
         <p style="margin: 10px 0;">
           <a href="${workflowUrl}" class="button" style="background-color: #2196f3;">View GitHub Actions Run</a>
         </p>
-        ${GITHUB_REPOSITORY ? `
+        ${ALLURE_DASHBOARD_URL ? `
         <p style="margin: 10px 0;">
-          <a href="https://${GITHUB_REPOSITORY.split('/')[0]}.github.io/${GITHUB_REPOSITORY.split('/')[1]}/" class="button" style="background-color: #4caf50;">View Allure Dashboard</a>
+          <a href="${ALLURE_DASHBOARD_URL}" class="button" style="background-color: #4caf50; font-size: 16px; font-weight: bold; padding: 15px 35px;">📊 View Allure Dashboard</a>
         </p>
-        ` : ''}
+        <p style="font-size: 12px; color: #666; margin-top: 5px; word-break: break-all;">
+          Dashboard: <strong>${ALLURE_DASHBOARD_URL}</strong>
+        </p>
+        ` : `
+        <p style="font-size: 12px; color: #999; margin-top: 5px;">
+          ℹ️ Allure Dashboard: https://${GITHUB_REPOSITORY.replace('/', '.github.io/')}/
+        </p>
+        `}
       </div>
       ` : ''}
 
