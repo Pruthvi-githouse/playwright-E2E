@@ -1,7 +1,7 @@
 # Page snapshot
 
 ```yaml
-- generic [ref=e1]:
+- generic [active] [ref=e1]:
   - alert [ref=e2]
   - generic [ref=e3]:
     - complementary [ref=e4]:
@@ -94,7 +94,7 @@
                 - generic:
                   - paragraph: Rate expires in
                   - paragraph:
-                    - text: 14:34s
+                    - text: 14:35s
                     - generic:
                       - img
               - generic [ref=e117]:
@@ -151,202 +151,202 @@
                       - group:
                         - generic: Card Reference No.
                   - generic [ref=e152]:
-                    - generic [ref=e153]: Card Number
-                    - generic [ref=e154]:
-                      - textbox "Card Number" [active] [ref=e155]: "5417780001000184"
+                    - generic: Card Number
+                    - generic [ref=e153]:
+                      - textbox "Card Number" [ref=e154]
                       - group:
                         - generic: Card Number
-                  - button "Date Of Departure DD/MM/YYYY" [ref=e158] [cursor=pointer]:
+                  - button "Date Of Departure DD/MM/YYYY" [ref=e157] [cursor=pointer]:
                     - generic: Date Of Departure
-                    - generic [ref=e159]:
-                      - generic [ref=e160]: DD/MM/YYYY
-                      - img [ref=e161]
-                  - generic [ref=e164]:
+                    - generic [ref=e158]:
+                      - generic [ref=e159]: DD/MM/YYYY
+                      - img [ref=e160]
+                  - generic [ref=e163]:
                     - generic: Destination Country
-                    - generic [ref=e165]:
-                      - combobox [ref=e166] [cursor=pointer]
+                    - generic [ref=e164]:
+                      - combobox [ref=e165] [cursor=pointer]
                       - textbox
                       - img
                       - group:
                         - generic: Destination Country
-                - generic [ref=e167]:
-                  - generic [ref=e169]:
-                    - generic [ref=e170]: Personal Details
-                    - generic [ref=e171]: Please fill in all required fields marked with an asterisk*
-                  - separator [ref=e172]
-                - generic [ref=e174]:
-                  - generic [ref=e175]:
-                    - generic [ref=e176]:
+                - generic [ref=e166]:
+                  - generic [ref=e168]:
+                    - generic [ref=e169]: Personal Details
+                    - generic [ref=e170]: Please fill in all required fields marked with an asterisk*
+                  - separator [ref=e171]
+                - generic [ref=e173]:
+                  - generic [ref=e174]:
+                    - generic [ref=e175]:
                       - generic: Full Name
-                      - generic [ref=e177]:
-                        - textbox "Full Name" [ref=e178]
+                      - generic [ref=e176]:
+                        - textbox "Full Name" [ref=e177]
                         - group:
                           - generic: Full Name
-                    - generic [ref=e179]:
-                      - img [ref=e180]
+                    - generic [ref=e178]:
+                      - img [ref=e179]
                       - text: As per PAN
-                  - generic [ref=e183]:
+                  - generic [ref=e182]:
                     - generic: PAN Number
-                    - generic [ref=e184]:
-                      - textbox "PAN Number" [ref=e185]
+                    - generic [ref=e183]:
+                      - textbox "PAN Number" [ref=e184]
                       - group:
                         - generic: PAN Number
-                  - generic [ref=e186]:
-                    - button "Date of Birth DD/MM/YYYY" [ref=e188] [cursor=pointer]:
+                  - generic [ref=e185]:
+                    - button "Date of Birth DD/MM/YYYY" [ref=e187] [cursor=pointer]:
                       - generic: Date of Birth
-                      - generic [ref=e189]:
-                        - generic [ref=e190]: DD/MM/YYYY
-                        - img [ref=e191]
-                    - generic [ref=e193]:
-                      - img [ref=e194]
+                      - generic [ref=e188]:
+                        - generic [ref=e189]: DD/MM/YYYY
+                        - img [ref=e190]
+                    - generic [ref=e192]:
+                      - img [ref=e193]
                       - text: As per PAN — applicant must be 12 years or older.
-                  - generic [ref=e197]:
+                  - generic [ref=e196]:
                     - generic: Passport Number
-                    - generic [ref=e198]:
-                      - textbox "Passport Number" [ref=e199]
+                    - generic [ref=e197]:
+                      - textbox "Passport Number" [ref=e198]
                       - group:
                         - generic: Passport Number
-                  - button "Passport Issue Date DD/MM/YYYY" [ref=e202] [cursor=pointer]:
+                  - button "Passport Issue Date DD/MM/YYYY" [ref=e201] [cursor=pointer]:
                     - generic: Passport Issue Date
-                    - generic [ref=e203]:
-                      - generic [ref=e204]: DD/MM/YYYY
-                      - img [ref=e205]
-                  - button "Passport Expiry Date DD/MM/YYYY" [ref=e209] [cursor=pointer]:
+                    - generic [ref=e202]:
+                      - generic [ref=e203]: DD/MM/YYYY
+                      - img [ref=e204]
+                  - button "Passport Expiry Date DD/MM/YYYY" [ref=e208] [cursor=pointer]:
                     - generic: Passport Expiry Date
-                    - generic [ref=e210]:
-                      - generic [ref=e211]: DD/MM/YYYY
-                      - img [ref=e212]
-                  - generic [ref=e215]:
+                    - generic [ref=e209]:
+                      - generic [ref=e210]: DD/MM/YYYY
+                      - img [ref=e211]
+                  - generic [ref=e214]:
                     - generic: Nationality
-                    - generic [ref=e216]:
-                      - combobox [ref=e217] [cursor=pointer]
+                    - generic [ref=e215]:
+                      - combobox [ref=e216] [cursor=pointer]
                       - textbox
                       - img
                       - group:
                         - generic: Nationality
-                  - generic [ref=e219]:
+                  - generic [ref=e218]:
                     - generic: Email ID
-                    - generic [ref=e220]:
-                      - textbox "Email ID" [ref=e221]
+                    - generic [ref=e219]:
+                      - textbox "Email ID" [ref=e220]
                       - group:
                         - generic: Email ID
-                  - generic [ref=e223]:
+                  - generic [ref=e222]:
                     - generic: Mobile Number
-                    - generic [ref=e224]:
-                      - textbox "Mobile Number" [ref=e225]
+                    - generic [ref=e223]:
+                      - textbox "Mobile Number" [ref=e224]
                       - group:
                         - generic: Mobile Number
-                - generic [ref=e227]:
-                  - generic [ref=e229]:
+                - generic [ref=e226]:
+                  - generic [ref=e228]:
                     - generic: Gender
-                    - generic [ref=e230]:
-                      - combobox [ref=e231] [cursor=pointer]
+                    - generic [ref=e229]:
+                      - combobox [ref=e230] [cursor=pointer]
                       - textbox
                       - img
                       - group:
                         - generic: Gender
-                  - generic [ref=e233]:
+                  - generic [ref=e232]:
                     - generic: Marital Status
-                    - generic [ref=e234]:
-                      - combobox [ref=e235] [cursor=pointer]
+                    - generic [ref=e233]:
+                      - combobox [ref=e234] [cursor=pointer]
                       - textbox
                       - img
                       - group:
                         - generic: Marital Status
-                  - generic [ref=e237]:
+                  - generic [ref=e236]:
                     - generic: Mother's Maiden Name
-                    - generic [ref=e238]:
-                      - textbox "Mother's Maiden Name" [ref=e239]
+                    - generic [ref=e237]:
+                      - textbox "Mother's Maiden Name" [ref=e238]
                       - group:
                         - generic: Mother's Maiden Name
-                  - generic [ref=e241]:
+                  - generic [ref=e240]:
                     - generic: Customer Type
-                    - generic [ref=e242]:
-                      - combobox [ref=e243] [cursor=pointer]
+                    - generic [ref=e241]:
+                      - combobox [ref=e242] [cursor=pointer]
                       - textbox
                       - img
                       - group:
                         - generic: Customer Type
-                - generic [ref=e244]:
-                  - generic [ref=e246]:
-                    - generic [ref=e247]: Residential Details
-                    - generic [ref=e248]: Please fill in all required fields marked with an asterisk*
-                  - separator [ref=e249]
-                - generic [ref=e251]:
-                  - generic [ref=e253]:
+                - generic [ref=e243]:
+                  - generic [ref=e245]:
+                    - generic [ref=e246]: Residential Details
+                    - generic [ref=e247]: Please fill in all required fields marked with an asterisk*
+                  - separator [ref=e248]
+                - generic [ref=e250]:
+                  - generic [ref=e252]:
                     - generic: Address Line 1
-                    - generic [ref=e254]:
-                      - textbox "Address Line 1" [ref=e255]
+                    - generic [ref=e253]:
+                      - textbox "Address Line 1" [ref=e254]
                       - group:
                         - generic: Address Line 1
-                  - generic [ref=e257]:
+                  - generic [ref=e256]:
                     - generic: Address Line 2
-                    - generic [ref=e258]:
-                      - textbox "Address Line 2" [ref=e259]
+                    - generic [ref=e257]:
+                      - textbox "Address Line 2" [ref=e258]
                       - group:
                         - generic: Address Line 2
-                  - generic [ref=e261]:
-                    - generic [ref=e262]: Country
-                    - generic [ref=e263]:
-                      - textbox "Country" [disabled] [ref=e264]: INDIA
+                  - generic [ref=e260]:
+                    - generic [ref=e261]: Country
+                    - generic [ref=e262]:
+                      - textbox "Country" [disabled] [ref=e263]: INDIA
                       - group:
                         - generic: Country
-                  - generic [ref=e266]:
+                  - generic [ref=e265]:
                     - generic: State
-                    - generic [ref=e267]:
-                      - combobox [ref=e268] [cursor=pointer]
+                    - generic [ref=e266]:
+                      - combobox [ref=e267] [cursor=pointer]
                       - textbox
                       - img
                       - group:
                         - generic: State
-                  - generic [ref=e270]:
+                  - generic [ref=e269]:
                     - generic: City
-                    - generic [ref=e271]:
-                      - textbox "City" [ref=e272]
+                    - generic [ref=e270]:
+                      - textbox "City" [ref=e271]
                       - group:
                         - generic: City
-                  - generic [ref=e274]:
+                  - generic [ref=e273]:
                     - generic: Pincode
-                    - generic [ref=e275]:
-                      - textbox "Pincode" [ref=e276]
+                    - generic [ref=e274]:
+                      - textbox "Pincode" [ref=e275]
                       - group:
                         - generic: Pincode
-                - generic [ref=e277]:
-                  - generic [ref=e280]:
+                - generic [ref=e276]:
+                  - generic [ref=e279]:
                     - text: Payment Details
-                    - generic [ref=e281]: (Option)
-                  - separator [ref=e282]
-                - generic [ref=e284]:
-                  - generic [ref=e286]:
+                    - generic [ref=e280]: (Option)
+                  - separator [ref=e281]
+                - generic [ref=e283]:
+                  - generic [ref=e285]:
                     - generic: Bank
-                    - generic [ref=e287]:
-                      - textbox "Bank" [ref=e288]
+                    - generic [ref=e286]:
+                      - textbox "Bank" [ref=e287]
                       - group:
                         - generic: Bank
-                  - generic [ref=e290]:
+                  - generic [ref=e289]:
                     - generic: UTR Number
-                    - generic [ref=e291]:
-                      - textbox "UTR Number" [ref=e292]
+                    - generic [ref=e290]:
+                      - textbox "UTR Number" [ref=e291]
                       - group:
                         - generic: UTR Number
-                  - button "Date of Payment DD/MM/YYYY" [ref=e295] [cursor=pointer]:
+                  - button "Date of Payment DD/MM/YYYY" [ref=e294] [cursor=pointer]:
                     - generic: Date of Payment
-                    - generic [ref=e296]:
-                      - generic [ref=e297]: DD/MM/YYYY
-                      - img [ref=e298]
-                  - generic [ref=e301]:
+                    - generic [ref=e295]:
+                      - generic [ref=e296]: DD/MM/YYYY
+                      - img [ref=e297]
+                  - generic [ref=e300]:
                     - generic: Paid INR Amount
-                    - generic [ref=e302]:
-                      - spinbutton "Paid INR Amount" [ref=e303]
+                    - generic [ref=e301]:
+                      - spinbutton "Paid INR Amount" [ref=e302]
                       - group:
                         - generic: Paid INR Amount
-                - generic [ref=e304]:
+                - generic [ref=e303]:
                   - button "Create Transaction" [disabled]
-      - paragraph [ref=e305]:
+      - paragraph [ref=e304]:
         - text: Powered by
-        - link "dataseed_logo" [ref=e306] [cursor=pointer]:
+        - link "dataseed_logo" [ref=e305] [cursor=pointer]:
           - /url: https://dataseedtech.com/
-          - img "dataseed_logo" [ref=e307]
+          - img "dataseed_logo" [ref=e306]
   - region "Notifications (F8)":
     - list
   - region "Notifications alt+T"

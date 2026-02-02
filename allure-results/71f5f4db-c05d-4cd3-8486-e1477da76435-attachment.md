@@ -1,0 +1,108 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - img "logo" [ref=e6]
+      - navigation [ref=e7]:
+        - generic [ref=e11]:
+          - link "Transaction" [ref=e14] [cursor=pointer]:
+            - /url: /maker/card-currency-transactions
+            - generic [ref=e16]: Transaction
+          - link "Card Balance" [ref=e19] [cursor=pointer]:
+            - /url: /maker/card-balance
+            - generic [ref=e21]: Card Balance
+          - link "Reports" [ref=e24] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e25]:
+              - generic [ref=e26]: Reports
+              - img [ref=e27]
+        - button "Logout" [ref=e29] [cursor=pointer]:
+          - generic [ref=e30]:
+            - img [ref=e31]
+            - generic [ref=e34]: Logout
+    - generic [ref=e35]:
+      - banner [ref=e36]:
+        - generic:
+          - heading [level=1]
+        - img "avatar" [ref=e41]
+      - main [ref=e42]:
+        - generic [ref=e44]:
+          - heading "Live Currency Rates" [level=2] [ref=e46]
+          - table [ref=e48]:
+            - rowgroup [ref=e49]:
+              - row "USD EUR AUD CAD SGD AED THB GBP" [ref=e50]:
+                - columnheader [ref=e51]
+                - columnheader "USD" [ref=e52]:
+                  - generic [ref=e54]: USD
+                - columnheader "EUR" [ref=e55]:
+                  - generic [ref=e57]: EUR
+                - columnheader "AUD" [ref=e58]:
+                  - generic [ref=e60]: AUD
+                - columnheader "CAD" [ref=e61]:
+                  - generic [ref=e63]: CAD
+                - columnheader "SGD" [ref=e64]:
+                  - generic [ref=e66]: SGD
+                - columnheader "AED" [ref=e67]:
+                  - generic [ref=e69]: AED
+                - columnheader "THB" [ref=e70]:
+                  - generic [ref=e72]: THB
+                - columnheader "GBP" [ref=e73]:
+                  - generic [ref=e75]: GBP
+            - rowgroup [ref=e76]:
+              - row "Buy 75.15 86.52 54.83 60.20 55.44 20.52 2.16 102.52" [ref=e77]:
+                - cell "Buy" [ref=e78]
+                - cell "75.15" [ref=e79]
+                - cell "86.52" [ref=e80]
+                - cell "54.83" [ref=e81]
+                - cell "60.20" [ref=e82]
+                - cell "55.44" [ref=e83]
+                - cell "20.52" [ref=e84]
+                - cell "2.16" [ref=e85]
+                - cell "102.52" [ref=e86]
+              - row "Sell 75.68 87.23 55.55 60.73 55.80 20.72 2.51 102.74" [ref=e87]:
+                - cell "Sell" [ref=e88]
+                - cell "75.68" [ref=e89]
+                - cell "87.23" [ref=e90]
+                - cell "55.55" [ref=e91]
+                - cell "60.73" [ref=e92]
+                - cell "55.80" [ref=e93]
+                - cell "20.72" [ref=e94]
+                - cell "2.51" [ref=e95]
+                - cell "102.74" [ref=e96]
+        - generic [ref=e101]:
+          - generic [ref=e103]:
+            - generic [ref=e104]: Card Type *
+            - generic [ref=e105]:
+              - combobox "Mastercard" [disabled] [ref=e106]
+              - textbox [disabled]: Master
+              - img
+              - group:
+                - generic: Card Type
+          - generic [ref=e108]:
+            - generic [ref=e109]:
+              - text: Card Number
+              - generic [ref=e110]: "*"
+            - generic [ref=e111]:
+              - textbox "Card Number" [ref=e112]: "5417780001000184"
+              - group:
+                - generic: Card Number *
+          - generic [ref=e113]:
+            - button "Getting Statement..." [disabled]
+      - paragraph [ref=e114]:
+        - text: Powered by
+        - link "dataseed_logo" [ref=e115] [cursor=pointer]:
+          - /url: https://dataseedtech.com/
+          - img "dataseed_logo" [ref=e116]
+  - region "Notifications (F8)":
+    - list [ref=e118]:
+      - listitem [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]: Login Successful
+          - generic [ref=e122]: Welcome back, OHM MACKER!
+        - button [ref=e123] [cursor=pointer]:
+          - img [ref=e124]
+  - region "Notifications alt+T"
+```
