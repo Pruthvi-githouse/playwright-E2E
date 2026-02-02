@@ -8,6 +8,8 @@
     "test:headed": "npx playwright test --headed",
     "test:debug": "npx playwright test --debug",
     "test:cardBalance": "npx playwright test tests/cardBalance.spec.js --headed",
+    "test:transaction": "npx playwright test tests/viewTransactionStatus.spec.js --headed",
+    "test:transaction:debug": "npx playwright test tests/viewTransactionStatus.spec.js --debug",
     "allure:report": "allure generate allure-results --clean -o allure-report",
     "allure:open": "allure open allure-report",
     "allure:serve": "allure serve allure-results",

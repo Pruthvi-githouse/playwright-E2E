@@ -1,0 +1,133 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - img "logo" [ref=e6]
+      - navigation [ref=e7]:
+        - generic [ref=e11]:
+          - link "Transaction" [ref=e14] [cursor=pointer]:
+            - /url: /checker/transaction
+            - generic [ref=e16]: Transaction
+          - link "Reports" [ref=e19] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e20]:
+              - generic [ref=e21]: Reports
+              - img [ref=e22]
+        - button "Logout" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]:
+            - img [ref=e26]
+            - generic [ref=e29]: Logout
+    - generic [ref=e30]:
+      - banner [ref=e31]:
+        - generic:
+          - heading [level=1]
+        - img "avatar" [ref=e36]
+      - main [ref=e37]:
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - heading "Live Currency Rates" [level=2] [ref=e42]
+            - table [ref=e44]:
+              - rowgroup [ref=e45]:
+                - row "USD EUR AUD CAD SGD CHF AED THB GBP SAR" [ref=e46]:
+                  - columnheader [ref=e47]
+                  - columnheader "USD" [ref=e48]:
+                    - generic [ref=e50]: USD
+                  - columnheader "EUR" [ref=e51]:
+                    - generic [ref=e53]: EUR
+                  - columnheader "AUD" [ref=e54]:
+                    - generic [ref=e56]: AUD
+                  - columnheader "CAD" [ref=e57]:
+                    - generic [ref=e59]: CAD
+                  - columnheader "SGD" [ref=e60]:
+                    - generic [ref=e62]: SGD
+                  - columnheader "CHF" [ref=e63]:
+                    - generic [ref=e65]: CHF
+                  - columnheader "AED" [ref=e66]:
+                    - generic [ref=e68]: AED
+                  - columnheader "THB" [ref=e69]:
+                    - generic [ref=e71]: THB
+                  - columnheader "GBP" [ref=e72]:
+                    - generic [ref=e74]: GBP
+                  - columnheader "SAR" [ref=e75]:
+                    - generic [ref=e77]: SAR
+              - rowgroup [ref=e78]:
+                - row "Buy 75.15 86.42 54.73 60.20 55.34 81.04 20.52 2.06 102.52 20.08" [ref=e79]:
+                  - cell "Buy" [ref=e80]
+                  - cell "75.15" [ref=e81]
+                  - cell "86.42" [ref=e82]
+                  - cell "54.73" [ref=e83]
+                  - cell "60.20" [ref=e84]
+                  - cell "55.34" [ref=e85]
+                  - cell "81.04" [ref=e86]
+                  - cell "20.52" [ref=e87]
+                  - cell "2.06" [ref=e88]
+                  - cell "102.52" [ref=e89]
+                  - cell "20.08" [ref=e90]
+                - row "Sell 75.68 87.33 56.15 60.73 56.00 81.26 20.72 2.61 103.24 20.31" [ref=e91]:
+                  - cell "Sell" [ref=e92]
+                  - cell "75.68" [ref=e93]
+                  - cell "87.33" [ref=e94]
+                  - cell "56.15" [ref=e95]
+                  - cell "60.73" [ref=e96]
+                  - cell "56.00" [ref=e97]
+                  - cell "81.26" [ref=e98]
+                  - cell "20.72" [ref=e99]
+                  - cell "2.61" [ref=e100]
+                  - cell "103.24" [ref=e101]
+                  - cell "20.31" [ref=e102]
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - link "Allocated Booking Request" [ref=e108] [cursor=pointer]:
+                - /url: /checker/ln-transaction/transaction-approval/allocated-booking-request
+              - link "View Transaction Status" [active] [ref=e109] [cursor=pointer]:
+                - /url: /checker/ln-transaction/transaction-approval/view-transaction-status
+            - generic [ref=e113]:
+              - generic [ref=e117]:
+                - generic [ref=e118]:
+                  - textbox "Search..." [ref=e119]
+                  - img [ref=e120]
+                - button "From Date - To Date" [ref=e124] [cursor=pointer]:
+                  - generic [ref=e125]: From Date - To Date
+                  - img
+                - button [ref=e126] [cursor=pointer]:
+                  - img [ref=e127]
+                - button [ref=e129] [cursor=pointer]:
+                  - img [ref=e130]
+              - table [ref=e135]:
+                - rowgroup [ref=e136]:
+                  - row "Order No.↓ Order Date Order Type Card Reference No Card Number Passport Number Purpose Type Currency Code Fx Amount Fx Rate INR Amount Status View Documents" [ref=e137]:
+                    - columnheader "Order No.↓" [ref=e138]
+                    - columnheader "Order Date" [ref=e139]
+                    - columnheader "Order Type" [ref=e140]
+                    - columnheader "Card Reference No" [ref=e141]
+                    - columnheader "Card Number" [ref=e142]
+                    - columnheader "Passport Number" [ref=e143]
+                    - columnheader "Purpose Type" [ref=e144]
+                    - columnheader "Currency Code" [ref=e145]
+                    - columnheader "Fx Amount" [ref=e146]
+                    - columnheader "Fx Rate" [ref=e147]
+                    - columnheader "INR Amount" [ref=e148]
+                    - columnheader "Status" [ref=e149]
+                    - columnheader "View Documents" [ref=e150]
+                - rowgroup [ref=e151]:
+                  - row "No Data" [ref=e152]:
+                    - cell "No Data" [ref=e153]:
+                      - img "No Data" [ref=e155]
+      - paragraph [ref=e156]:
+        - text: Powered by
+        - link "dataseed_logo" [ref=e157] [cursor=pointer]:
+          - /url: https://dataseedtech.com/
+          - img "dataseed_logo" [ref=e158]
+  - region "Notifications (F8)":
+    - list [ref=e160]:
+      - listitem [ref=e161]:
+        - generic [ref=e162]:
+          - generic [ref=e163]: Login Successful
+          - generic [ref=e164]: Welcome back, rutherford checker 1!
+        - button [ref=e165] [cursor=pointer]:
+          - img [ref=e166]
+  - region "Notifications alt+T"
+```

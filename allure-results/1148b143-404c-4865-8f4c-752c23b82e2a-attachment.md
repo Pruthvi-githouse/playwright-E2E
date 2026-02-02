@@ -1,0 +1,40 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - img "Ebix_CASH logo" [ref=e5]
+    - generic [ref=e7]:
+      - generic [ref=e9]: Welcome Back
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - text: Email
+          - generic [ref=e13]:
+            - img [ref=e15]
+            - generic [ref=e18]: "|"
+            - textbox "Enter your email" [ref=e19]: rutherford.checker@gmail.com
+        - generic [ref=e20]:
+          - text: Password
+          - generic [ref=e21]:
+            - img [ref=e23]
+            - generic [ref=e27]: "|"
+            - textbox "Enter your password" [active] [ref=e28]
+            - button [ref=e29] [cursor=pointer]:
+              - img [ref=e30]
+          - link "Forgot your password?" [ref=e35] [cursor=pointer]:
+            - /url: /forgot-password
+          - paragraph [ref=e36]: Please Enter Password
+        - button "Login" [ref=e37] [cursor=pointer]
+    - contentinfo [ref=e38]:
+      - paragraph [ref=e39]:
+        - text: Powered by
+        - link "dataseed_logo" [ref=e40] [cursor=pointer]:
+          - /url: https://dataseedtech.com/
+          - img "dataseed_logo" [ref=e41]
+      - paragraph [ref=e42]: © EbixCash. All rights reserved
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+```
