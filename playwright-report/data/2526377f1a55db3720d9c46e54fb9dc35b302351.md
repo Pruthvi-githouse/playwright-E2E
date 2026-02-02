@@ -1,0 +1,105 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - img "logo" [ref=e6]
+      - navigation [ref=e7]:
+        - generic [ref=e11]:
+          - link "Transaction" [ref=e14] [cursor=pointer]:
+            - /url: /maker/card-currency-transactions
+            - generic [ref=e16]: Transaction
+          - link "Card Balance" [ref=e19] [cursor=pointer]:
+            - /url: /maker/card-balance
+            - generic [ref=e21]: Card Balance
+          - link "Reports" [ref=e24] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e25]:
+              - generic [ref=e26]: Reports
+              - img [ref=e27]
+        - button "Logout" [ref=e29] [cursor=pointer]:
+          - generic [ref=e30]:
+            - img [ref=e31]
+            - generic [ref=e34]: Logout
+    - generic [ref=e35]:
+      - banner [ref=e36]:
+        - generic:
+          - heading [level=1]
+        - img "avatar" [ref=e41]
+      - main [ref=e42]:
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - heading "Live Currency Rates" [level=2] [ref=e47]
+            - table [ref=e49]:
+              - rowgroup [ref=e50]:
+                - row "USD EUR AUD CAD SGD CHF AED THB GBP SAR" [ref=e51]:
+                  - columnheader [ref=e52]
+                  - columnheader "USD" [ref=e53]:
+                    - generic [ref=e55]: USD
+                  - columnheader "EUR" [ref=e56]:
+                    - generic [ref=e58]: EUR
+                  - columnheader "AUD" [ref=e59]:
+                    - generic [ref=e61]: AUD
+                  - columnheader "CAD" [ref=e62]:
+                    - generic [ref=e64]: CAD
+                  - columnheader "SGD" [ref=e65]:
+                    - generic [ref=e67]: SGD
+                  - columnheader "CHF" [ref=e68]:
+                    - generic [ref=e70]: CHF
+                  - columnheader "AED" [ref=e71]:
+                    - generic [ref=e73]: AED
+                  - columnheader "THB" [ref=e74]:
+                    - generic [ref=e76]: THB
+                  - columnheader "GBP" [ref=e77]:
+                    - generic [ref=e79]: GBP
+                  - columnheader "SAR" [ref=e80]:
+                    - generic [ref=e82]: SAR
+              - rowgroup [ref=e83]:
+                - row "Buy 75.15 86.42 54.73 60.20 55.34 81.04 20.52 2.06 102.52 20.08" [ref=e84]:
+                  - cell "Buy" [ref=e85]
+                  - cell "75.15" [ref=e86]
+                  - cell "86.42" [ref=e87]
+                  - cell "54.73" [ref=e88]
+                  - cell "60.20" [ref=e89]
+                  - cell "55.34" [ref=e90]
+                  - cell "81.04" [ref=e91]
+                  - cell "20.52" [ref=e92]
+                  - cell "2.06" [ref=e93]
+                  - cell "102.52" [ref=e94]
+                  - cell "20.08" [ref=e95]
+                - row "Sell 75.68 87.33 56.15 60.73 56.00 81.26 20.72 2.61 103.24 20.31" [ref=e96]:
+                  - cell "Sell" [ref=e97]
+                  - cell "75.68" [ref=e98]
+                  - cell "87.33" [ref=e99]
+                  - cell "56.15" [ref=e100]
+                  - cell "60.73" [ref=e101]
+                  - cell "56.00" [ref=e102]
+                  - cell "81.26" [ref=e103]
+                  - cell "20.72" [ref=e104]
+                  - cell "2.61" [ref=e105]
+                  - cell "103.24" [ref=e106]
+                  - cell "20.31" [ref=e107]
+          - generic [ref=e109]:
+            - link "Create New Transaction" [ref=e110] [cursor=pointer]:
+              - /url: /maker/card-currency-transactions/create-new-incident
+            - link "Update Transaction" [ref=e111] [cursor=pointer]:
+              - /url: /maker/card-currency-transactions/update-incident
+            - link "Check Transaction Status" [ref=e112] [cursor=pointer]:
+              - /url: /maker/card-currency-transactions/check-incident-status
+      - paragraph [ref=e114]:
+        - text: Powered by
+        - link "dataseed_logo" [ref=e115] [cursor=pointer]:
+          - /url: https://dataseedtech.com/
+          - img "dataseed_logo" [ref=e116]
+  - region "Notifications (F8)":
+    - list [ref=e118]:
+      - listitem [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]: Login Successful
+          - generic [ref=e122]: Welcome back, rutherford maker 1!
+        - button [ref=e123] [cursor=pointer]:
+          - img [ref=e124]
+  - region "Notifications alt+T"
+```

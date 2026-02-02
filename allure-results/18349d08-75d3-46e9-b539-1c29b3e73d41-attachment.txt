@@ -1,0 +1,44 @@
+
+╔════════════════════════════════════════════════════════╗
+║              DIAGNOSTIC - FORM ELEMENTS                ║
+╚════════════════════════════════════════════════════════╝
+
+📍 Logging in...
+✅ Navigated to: https://uat-agent.ebixcard.com
+📄 Login page loaded
+✅ Element visible: input[id="emailId-agent"]
+🔐 Starting login process...
+✅ Filled input: input[id="emailId-agent"] with "rutherford.maker@gmail.com"
+✅ Filled input: input[id="password-agent"] with "rutherford.maker@2025"
+✅ Clicked: button:has-text("Login")
+📧 Login credentials submitted
+✅ Login completed
+✅ Element visible check (button:has-text("Do it Later")): false
+✅ Login successful
+
+📍 Inspecting page structure...
+
+🔍 Found 27 input fields:
+   [0] Type: null, Name: orderType, ID: null, Placeholder: null
+   [1] Type: null, Name: transactionType, ID: null, Placeholder: null
+   [2] Type: null, Name: travelType, ID: null, Placeholder: null
+   [3] Type: null, Name: documentType, ID: null, Placeholder: null
+   [4] Type: null, Name: cardType, ID: null, Placeholder: null
+
+🔍 Found 8 buttons:
+   [0] Text: Logout, Aria-Label: null
+   [1] Text: Date Of DepartureDD/MM/YYYY, Aria-Label: null
+   [2] Text: Date of BirthDD/MM/YYYY, Aria-Label: null
+   [3] Text: Passport Issue DateDD/MM/YYYY, Aria-Label: null
+   [4] Text: Passport Expiry DateDD/MM/YYYY, Aria-Label: null
+
+🔍 Found 7 links
+
+📄 Page Title: EbixCash
+
+🌐 Current URL: https://uat-agent.ebixcard.com/maker/card-currency-transactions/create-new-incident
+
+╔════════════════════════════════════════════════════════╗
+║                    ✅ DIAGNOSTIC COMPLETE              ║
+╚════════════════════════════════════════════════════════╝
+

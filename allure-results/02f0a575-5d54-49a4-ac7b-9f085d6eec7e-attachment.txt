@@ -1,0 +1,8 @@
+🧪 Test: Login with empty email
+✅ Navigated to: https://uat-agent.ebixcard.com
+📄 Login page loaded
+✅ Element visible: input[id="emailId-agent"]
+✅ Filled input: input[id="password-agent"] with "rutherford.maker@2025"
+✅ Clicked: button:has-text("Login")
+✅ Current URL: https://uat-agent.ebixcard.com/login
+✅ Empty email test passed

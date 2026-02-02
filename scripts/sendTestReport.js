@@ -18,16 +18,17 @@ const nodemailer = require('nodemailer');
 const GMAIL_USER = process.env.GMAIL_USER || '';
 const GMAIL_PASSWORD = process.env.GMAIL_PASSWORD || '';
 const RECIPIENT_EMAIL = process.env.RECIPIENT_EMAIL || '';
+const STAKEHOLDER_EMAIL = process.env.STAKEHOLDER_EMAIL || '';
 const GITHUB_SERVER_URL = process.env.GITHUB_SERVER_URL || 'https://github.com';
 const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY || '';
 const GITHUB_RUN_ID = process.env.GITHUB_RUN_ID || '';
 
 // Validate required env vars
-if (!GMAIL_USER || !GMAIL_PASSWORD || !RECIPIENT_EMAIL) {
+if (!GMAIL_USER || !GMAIL_PASSWORD || (!RECIPIENT_EMAIL && !STAKEHOLDER_EMAIL)) {
   console.error('❌ Missing required environment variables:');
   console.error('   - GMAIL_USER');
   console.error('   - GMAIL_PASSWORD');
-  console.error('   - RECIPIENT_EMAIL');
+  console.error('   - RECIPIENT_EMAIL or STAKEHOLDER_EMAIL (at least one required)');
   process.exit(1);
 }
 
@@ -285,11 +286,18 @@ function createEmailBody(results) {
         </ul>
       </div>
 
-      <!-- GitHub Actions Link -->
+      <!-- GitHub Actions Link & Allure Dashboard -->
       ${GITHUB_RUN_ID ? `
-      <p style="text-align: center;">
-        <a href="${workflowUrl}" class="button">View Full Report on GitHub</a>
-      </p>
+      <div style="text-align: center; margin-top: 30px;">
+        <p style="margin: 10px 0;">
+          <a href="${workflowUrl}" class="button" style="background-color: #2196f3;">View GitHub Actions Run</a>
+        </p>
+        ${GITHUB_REPOSITORY ? `
+        <p style="margin: 10px 0;">
+          <a href="https://${GITHUB_REPOSITORY.split('/')[0]}.github.io/${GITHUB_REPOSITORY.split('/')[1]}/" class="button" style="background-color: #4caf50;">View Allure Dashboard</a>
+        </p>
+        ` : ''}
+      </div>
       ` : ''}
 
       <div class="timestamp">
@@ -330,10 +338,13 @@ async function sendEmail(results) {
     const emailBody = createEmailBody(results);
     const emailSubject = `Playwright Automation Test Status - ${results.status}`;
 
+    // Combine recipients
+    const recipients = [RECIPIENT_EMAIL, STAKEHOLDER_EMAIL].filter(Boolean).join(',');
+
     // Send email
     const info = await transporter.sendMail({
       from: `"Playwright CI/CD" <${GMAIL_USER}>`,
-      to: RECIPIENT_EMAIL,
+      to: recipients,
       subject: emailSubject,
       html: emailBody,
       text: `

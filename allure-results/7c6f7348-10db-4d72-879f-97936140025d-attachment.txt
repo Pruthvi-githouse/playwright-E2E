@@ -1,0 +1,33 @@
+
+╔════════════════════════════════════════════════════════╗
+║           CREATE TRANSACTION - E2E FLOW               ║
+╚════════════════════════════════════════════════════════╝
+
+📍 STEP 1: Navigate to login page
+✅ Navigated to: https://uat-agent.ebixcard.com
+📄 Login page loaded
+✅ Element visible: input[id="emailId-agent"]
+✅ Login page loaded
+
+📍 STEP 2: Login with credentials
+🔐 Starting login process...
+✅ Filled input: input[id="emailId-agent"] with "rutherford.maker@gmail.com"
+✅ Filled input: input[id="password-agent"] with "rutherford.maker@2025"
+✅ Clicked: button:has-text("Login")
+📧 Login credentials submitted
+✅ Login completed
+✅ Login successful
+
+📍 STEP 3: Skip password setup
+✅ Element visible check (button:has-text("Do it Later")): false
+✅ Modal skipped
+
+📍 STEP 4: Navigate to Create Transaction page
+📍 STEP 5: Fill transaction form
+Found 2 form fields
+
+📍 STEP 6: Submit transaction
+╔════════════════════════════════════════════════════════╗
+║                    ✅ TEST COMPLETED                   ║
+╚════════════════════════════════════════════════════════╝
+

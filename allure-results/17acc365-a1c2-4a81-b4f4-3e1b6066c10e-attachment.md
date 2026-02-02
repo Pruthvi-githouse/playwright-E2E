@@ -1,0 +1,142 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - img [ref=e6]
+      - navigation [ref=e7]:
+        - generic [ref=e11]:
+          - link [ref=e14] [cursor=pointer]:
+            - /url: /maker/card-currency-transactions
+            - generic [ref=e16]: Transaction
+          - link [ref=e19] [cursor=pointer]:
+            - /url: /maker/card-balance
+            - generic [ref=e21]: Card Balance
+          - link [ref=e24] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e25]:
+              - generic [ref=e26]: Reports
+              - img [ref=e27]
+        - button [ref=e29] [cursor=pointer]:
+          - generic [ref=e30]:
+            - img [ref=e31]
+            - generic [ref=e34]: Logout
+    - generic [ref=e35]:
+      - banner [ref=e36]:
+        - img [ref=e41]
+      - main [ref=e42]:
+        - generic [ref=e44]:
+          - heading [level=2] [ref=e46]: Live Currency Rates
+          - table [ref=e48]:
+            - rowgroup [ref=e49]:
+              - row [ref=e50]:
+                - columnheader [ref=e51]
+                - columnheader [ref=e52]:
+                  - generic [ref=e54]: USD
+                - columnheader [ref=e55]:
+                  - generic [ref=e57]: EUR
+                - columnheader [ref=e58]:
+                  - generic [ref=e60]: AUD
+                - columnheader [ref=e61]:
+                  - generic [ref=e63]: CAD
+                - columnheader [ref=e64]:
+                  - generic [ref=e66]: SGD
+                - columnheader [ref=e67]:
+                  - generic [ref=e69]: CHF
+                - columnheader [ref=e70]:
+                  - generic [ref=e72]: AED
+                - columnheader [ref=e73]:
+                  - generic [ref=e75]: THB
+                - columnheader [ref=e76]:
+                  - generic [ref=e78]: GBP
+                - columnheader [ref=e79]:
+                  - generic [ref=e81]: SAR
+            - rowgroup [ref=e82]:
+              - row [ref=e83]:
+                - cell [ref=e84]: Buy
+                - cell [ref=e85]: "75.15"
+                - cell [ref=e86]: "86.42"
+                - cell [ref=e87]: "54.73"
+                - cell [ref=e88]: "60.20"
+                - cell [ref=e89]: "55.34"
+                - cell [ref=e90]: "81.04"
+                - cell [ref=e91]: "20.52"
+                - cell [ref=e92]: "2.06"
+                - cell [ref=e93]: "102.52"
+                - cell [ref=e94]: "20.08"
+              - row [ref=e95]:
+                - cell [ref=e96]: Sell
+                - cell [ref=e97]: "75.68"
+                - cell [ref=e98]: "87.33"
+                - cell [ref=e99]: "56.15"
+                - cell [ref=e100]: "60.73"
+                - cell [ref=e101]: "56.00"
+                - cell [ref=e102]: "81.26"
+                - cell [ref=e103]: "20.72"
+                - cell [ref=e104]: "2.61"
+                - cell [ref=e105]: "103.24"
+                - cell [ref=e106]: "20.31"
+        - generic [ref=e111]:
+          - generic [ref=e113]:
+            - generic [ref=e114]: Card Type *
+            - generic [ref=e115]:
+              - combobox [disabled] [ref=e116]: Visa
+              - textbox [disabled]: Visa
+              - img
+              - group:
+                - generic: Card Type
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - text: Card Number
+              - generic [ref=e120]: "*"
+            - generic [ref=e121]:
+              - textbox [ref=e122]: "5417780001000184"
+              - group:
+                - generic: Card Number *
+          - button [ref=e124] [cursor=pointer]: Get Statement
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - heading [level=2] [ref=e130]: Latest Transaction
+            - button [ref=e131] [cursor=pointer]: Download Statement
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - generic [ref=e134]:
+                - generic [ref=e135]: Card Load
+                - generic [ref=e136]:
+                  - text: —
+                  - generic [ref=e137]: Settle
+              - generic [ref=e138]:
+                - generic [ref=e139]: USD 1.00
+                - generic [ref=e140]: 08-01-2025
+            - generic [ref=e141]:
+              - generic [ref=e142]:
+                - generic [ref=e143]: Card Reload
+                - generic [ref=e144]:
+                  - text: —
+                  - generic [ref=e145]: Settle
+              - generic [ref=e146]:
+                - generic [ref=e147]: THB 100.00
+                - generic [ref=e148]: 27-01-2025
+            - generic [ref=e149]:
+              - generic [ref=e150]:
+                - generic [ref=e151]: Card Reload
+                - generic [ref=e152]:
+                  - text: —
+                  - generic [ref=e153]: Settle
+              - generic [ref=e154]:
+                - generic [ref=e155]: AED 5.00
+                - generic [ref=e156]: 27-01-2025
+      - paragraph [ref=e157]:
+        - text: Powered by
+        - link [ref=e158] [cursor=pointer]:
+          - /url: https://dataseedtech.com/
+          - img [ref=e159]
+  - list
+  - dialog "Are you sure you want to Logout?" [ref=e162]:
+    - heading "Are you sure you want to Logout?" [level=2] [ref=e163]
+    - generic [ref=e165]:
+      - button "Cancel" [ref=e166] [cursor=pointer]
+      - button "Confirm" [ref=e167] [cursor=pointer]
+```
