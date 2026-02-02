@@ -1,0 +1,12 @@
+✅ Step 1: Login page loaded
+✅ Step 2: Logged in successfully
+✅ Step 2a: Skipped password setup modal
+✅ Step 3: Navigated to Create Transaction directly
+✅ Step 4: Basic Information/Booking details filled
+ℹ️ Personal details partial fill: locator.fill: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('input[id="_r_c_"]')
+
+ℹ️ Residential details partial fill: locator.fill: Target page, context or browser has been closed
+ℹ️ Payment details partial fill: locator.fill: Target page, context or browser has been closed
+ℹ️ Submit button not yet visible - form needs more data
