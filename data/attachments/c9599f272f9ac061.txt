@@ -1,0 +1,12 @@
+🧪 Test: Login with invalid password
+✅ Navigated to: https://uat-agent.ebixcard.com
+📄 Login page loaded
+✅ Element visible: input[id="emailId-agent"]
+🔐 Starting login process...
+✅ Filled input: input[id="emailId-agent"] with "rutherford.maker@gmail.com"
+✅ Filled input: input[id="password-agent"] with "wrongpassword"
+✅ Clicked: button:has-text("Login")
+📧 Login credentials submitted
+✅ Login completed
+✅ Current URL: https://uat-agent.ebixcard.com/login
+✅ Invalid password test passed

@@ -1,0 +1,15 @@
+🧪 Test: Handle form submission
+✅ Navigated to: https://uat-agent.ebixcard.com
+📄 Login page loaded
+✅ Element visible: input[id="emailId-agent"]
+🔐 Starting login process...
+✅ Filled input: input[id="emailId-agent"] with "rutherford.maker@gmail.com"
+✅ Filled input: input[id="password-agent"] with "rutherford.maker@2025"
+✅ Clicked: button:has-text("Login")
+📧 Login credentials submitted
+✅ Login completed
+✅ Element visible check (button:has-text("Do it Later")): false
+✅ Current URL: https://uat-agent.ebixcard.com/maker/card-currency-transactions/create-new-incident
+🔍 Login success check: ✅ Yes
+Found 1 forms on page
+✅ Form submission test passed

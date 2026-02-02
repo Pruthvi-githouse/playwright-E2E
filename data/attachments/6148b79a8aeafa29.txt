@@ -1,0 +1,3 @@
+🧪 Test: Display card balance information
+✅ Navigated to: https://uat-agent.ebixcard.com
+📄 Login page loaded

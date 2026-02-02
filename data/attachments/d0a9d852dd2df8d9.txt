@@ -1,0 +1,8 @@
+ℹ️ Create Transaction button is disabled - required fields may need additional configuration
+✅ E2E Test: Successfully navigated and filled Create Transaction form
+Current URL: https://uat-agent.ebixcard.com/maker/card-currency-transactions/create-new-incident
+Form fields validated: {
+  fullName: 'John Doe',
+  email: 'john.doe@example.com',
+  mobile: '9876543210'
+}

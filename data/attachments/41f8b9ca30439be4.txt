@@ -1,0 +1,40 @@
+Labels: [
+  {
+    "text": "Email",
+    "htmlFor": "password",
+    "html": "<label for=\"password\" class=\"text-sm font-medium text-gray-700\">Email</label>"
+  },
+  {
+    "text": "Password",
+    "htmlFor": "password",
+    "html": "<label for=\"password\" class=\"text-sm font-medium text-gray-700\">Password</label>"
+  }
+]
+Inputs: [
+  {
+    "type": "email",
+    "id": "emailId-agent",
+    "name": "emailId",
+    "placeholder": "Enter your email",
+    "html": "<input id=\"emailId-agent\" placeholder=\"Enter your email\" class=\"flex-1 ml-3 outline-none text-gray-700\" type=\"email\" name=\"emailId\">"
+  },
+  {
+    "type": "password",
+    "id": "password-agent",
+    "name": "password",
+    "placeholder": "Enter your password",
+    "html": "<input id=\"password-agent\" placeholder=\"Enter your password\" class=\"flex-1 ml-3 outline-none text-gray-700\" type=\"password\" name=\"password\">"
+  }
+]
+Buttons: [
+  {
+    "text": "",
+    "type": "button",
+    "html": "<button type=\"button\" class=\"absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-eye h-5 w-5\" aria-hidden=\"true\"><path d=\"M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0\"></path><circle cx=\"12\" cy=\"12\" r=\"3\"></circle></svg></button>"
+  },
+  {
+    "text": "Login",
+    "type": "submit",
+    "html": "<button type=\"submit\" class=\"w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed\">Login</button>"
+  }
+]

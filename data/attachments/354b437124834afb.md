@@ -1,0 +1,59 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - img "logo" [ref=e6]
+      - navigation [ref=e7]:
+        - generic [ref=e11]:
+          - link "Transaction" [ref=e14] [cursor=pointer]:
+            - /url: /maker/card-currency-transactions
+            - generic [ref=e16]: Transaction
+          - link "Card Balance" [ref=e19] [cursor=pointer]:
+            - /url: /maker/card-balance
+            - generic [ref=e21]: Card Balance
+          - link "Reports" [ref=e24] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e25]:
+              - generic [ref=e26]: Reports
+              - img [ref=e27]
+        - button "Logout" [ref=e29] [cursor=pointer]:
+          - generic [ref=e30]:
+            - img [ref=e31]
+            - generic [ref=e34]: Logout
+    - generic [ref=e35]:
+      - banner [ref=e36]:
+        - generic:
+          - heading [level=1]
+        - img "avatar" [ref=e41]
+      - main [ref=e42]:
+        - generic [ref=e44]:
+          - heading "Live Currency Rates" [level=2] [ref=e47]
+          - generic [ref=e53]:
+            - generic [ref=e54]:
+              - link "Create New Transaction" [ref=e55] [cursor=pointer]:
+                - /url: /maker/card-currency-transactions/create-new-incident
+              - link "Update Transaction" [ref=e56] [cursor=pointer]:
+                - /url: /maker/card-currency-transactions/update-incident
+              - link "Check Transaction Status" [ref=e57] [cursor=pointer]:
+                - /url: /maker/card-currency-transactions/check-incident-status
+            - generic [ref=e60]:
+              - img [ref=e61]
+              - text: Loading...
+      - paragraph [ref=e70]:
+        - text: Powered by
+        - link "dataseed_logo" [ref=e71] [cursor=pointer]:
+          - /url: https://dataseedtech.com/
+          - img "dataseed_logo" [ref=e72]
+  - region "Notifications (F8)":
+    - list [ref=e74]:
+      - listitem [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]: Login Successful
+          - generic [ref=e78]: Welcome back, rutherford maker 1!
+        - button [ref=e79] [cursor=pointer]:
+          - img [ref=e80]
+  - region "Notifications alt+T"
+```

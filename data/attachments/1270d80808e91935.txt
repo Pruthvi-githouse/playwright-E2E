@@ -1,0 +1,36 @@
+
+╔════════════════════════════════════════════════════════╗
+║           CARD BALANCE - GET STATEMENT WORKFLOW        ║
+╚════════════════════════════════════════════════════════╝
+
+📍 STEP 1: Navigate to login page
+✅ Navigated to: https://uat-agent.ebixcard.com
+📄 Login page loaded
+✅ Element visible: input[id="emailId-agent"]
+✅ Login page loaded successfully
+
+📍 STEP 2: Login with valid credentials
+🔐 Starting login process...
+✅ Filled input: input[id="emailId-agent"] with "rutherford.maker@gmail.com"
+✅ Filled input: input[id="password-agent"] with "rutherford.maker@2025"
+✅ Clicked: button:has-text("Login")
+📧 Login credentials submitted
+✅ Login completed
+✅ Logged in as: rutherford.maker@gmail.com
+
+📍 STEP 3: Handle password setup modal
+✅ Element visible check (button:has-text("Do it Later")): false
+✅ Password setup modal handled
+
+📍 STEP 4: Navigate to Card Balance page
+✅ Card Balance page navigated
+
+📍 STEP 5: Enter card number
+✅ Card number entered: 5417780001000184
+
+📍 STEP 6: Click Get Statement button
+✅ Get Statement button clicked
+
+📍 STEP 7: Logout
+✅ Logged out successfully
+
