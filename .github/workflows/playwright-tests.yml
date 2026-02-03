@@ -4,8 +4,8 @@ name: Playwright Tests with Allure Report
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: '0 * * * *'  # Run every hour at minute 0 (UTC)
+  # schedule:
+  #   - cron: '0 * * * *'  # Run every hour at minute 0 (UTC)
 
 jobs:
   # Define the test job that runs on GitHub's Ubuntu runner
